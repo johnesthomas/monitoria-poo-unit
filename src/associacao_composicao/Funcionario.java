@@ -38,9 +38,9 @@ public class Funcionario {
 	
 	public String toString() {
 		return 
-				"Nome: " + getNome() +
-				"\nFunção: " + getFuncao() + 
-				String.format("%nSalário: %.2f", getSalario()) + "\n\n";
+				"Nome: " + nome +
+				"\nFunção: " + funcao + 
+				String.format("%nSalário: %.2f", salario) + "\n\n";
 				
 		
 	}

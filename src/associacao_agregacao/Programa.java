@@ -3,13 +3,13 @@ package associacao_agregacao;
 public class Programa {
 
 	public static void main(String[] args) {
-
+		
 		Gabinete gabinete = new Gabinete("Dell", "500X", "ATX", 150.00);
 		
 		gabinete.addPeca(new Peca("WB", "1TB", "Hard Disk (HD)", 200.00));
 		gabinete.addPeca(new Peca("Zotac", "GTX 1060 6GB", "Placa de Vídeo", 1500.00));
 		gabinete.addPeca(new Peca("AMD", "Ryzen 5 2600X", "Processador", 1200.00));
-		gabinete.addPeca(new Peca("BioStar", "ATX GT5", "Placa Mãe", 500));
+		gabinete.addPeca(new Peca("BioStar", "ATX GT5", "Placa Mãe", 500.00));
 		
 		Mouse mouse = new Mouse("HyperX", "Ultra", "Normal", 100.00);
 		

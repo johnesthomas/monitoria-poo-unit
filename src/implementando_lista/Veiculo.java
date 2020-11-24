@@ -75,7 +75,7 @@ public class Veiculo {
 
 	public ArrayList<Peca> getPecas() {
 		return pecas;
-	}
+	}	
 
 	public void setPecas(ArrayList<Peca> pecas) {
 		this.pecas = pecas;

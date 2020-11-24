@@ -20,14 +20,14 @@ public class Programa {
 		ArrayList<Peca> listaPecas = new ArrayList<Peca>();
 
 		// (2) Adicionando peças à lista
-
+		
 		listaPecas.add(new Peca(500, "Pneu", "Continental", "165/70 R14", "Preto", 200.00)); // 1
 		listaPecas.add(new Peca(501, "Porta", "Fiat", "XX", "Branca", 800.00)); // 2
 
 		// (3) Imprimindo a lista de peças
-
+		
 		for (Peca peca : listaPecas) {
-
+			
 			System.out.println("Codigo: " + peca.getCodigo());
 			System.out.println("Descrição: " + peca.getDescricao());
 			System.out.println("Marca: " + peca.getMarca());
@@ -68,6 +68,7 @@ public class Programa {
 		
 		System.out.println("Marca:" + auto.getMarca());
 		System.out.println("Modelo: " + auto.getModelo());		
+				
 		StringBuilder sb = new StringBuilder();
 		for (Peca peca : auto.getPecas()) {
 			sb.append(peca);

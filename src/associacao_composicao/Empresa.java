@@ -80,7 +80,7 @@ public class Empresa {
 	}
 	
 	public String toString() {
-		return "Nome: " + getNomeFantasia() + "\nEndereço: " + getEndereco() + "\nTelefone: " + getTelefone();
+		return "Nome: " + nomeFantasia + "\nEndereço: " + endereco + "\nTelefone: " + telefone;
 	}
 
 }
