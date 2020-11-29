@@ -1,6 +1,6 @@
 package polimorfismo;
 
-public class Veiculo {
+public abstract class Veiculo implements IAtualizar{
 
 	private String marca;
 	private String modelo;
@@ -9,6 +9,7 @@ public class Veiculo {
 	private int numPass; // numero de passageiros
 	private double capTanque; // capacidade do tanque de combustivel
 	private double kmPorLitro;
+	private double velocidade;
 
 	public Veiculo() {
 	}
@@ -22,6 +23,7 @@ public class Veiculo {
 		this.numPass = numPass;
 		this.capTanque = capTanque;
 		this.kmPorLitro = kmPorLitro;
+		this.velocidade = 0.0;
 	}
 
 	public Veiculo(String marca, String modelo, String cor, int numPass, double capTanque, double kmPorLitro) {
@@ -33,6 +35,7 @@ public class Veiculo {
 		this.capTanque = capTanque;
 		this.kmPorLitro = kmPorLitro;
 		this.velMax = 200;
+		this.velocidade = 0.0;
 	}
 
 	public Veiculo(String marca, String modelo, int numPass, double capTanque, double kmPorLitro) {
@@ -44,6 +47,7 @@ public class Veiculo {
 		this.kmPorLitro = kmPorLitro;
 		this.cor = "Branco";
 		this.velMax = 180;
+		this.velocidade = 0.0;
 	}
 
 	public String getMarca() {
@@ -90,7 +94,7 @@ public class Veiculo {
 		return capTanque;
 	}
 
-	public void setCapTanque(int capTanque) {
+	public void setCapTanque(double capTanque) {
 		this.capTanque = capTanque;
 	}
 
@@ -102,8 +106,15 @@ public class Veiculo {
 		this.kmPorLitro = kmPorLitro;
 	}
 
-	public String calcularAutonomia() {
-		double autonomia = getCapTanque() * getKmPorLitro();
-		return Double.toString(autonomia);
+	public double getVelocidade() {
+		return velocidade;
 	}
+
+	public void setVelocidade(double velocidade) {
+		this.velocidade = velocidade;
+	}
+
+	public abstract String calcularAutonomia();
+	
+	public abstract String toString();
 }

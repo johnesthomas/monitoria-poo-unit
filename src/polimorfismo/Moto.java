@@ -27,4 +27,32 @@ public class Moto extends Veiculo {
 		return "Autonomia da Moto: " + Double.toString(autonomia);
 
 	}
+
+	@Override
+	public void cor(String cor) {
+		super.setCor(cor);
+	}
+
+	@Override
+	public void numPass(int num) {
+		super.setNumPass(num);
+	}
+
+	@Override
+	public void capTanque(double capTanque) {
+		super.setCapTanque(capTanque);
+
+	}
+	
+	public String toString() {
+		return "Marca: " + super.getMarca() + "\n" +
+				"Modelo: " + super.getModelo() + "\n" +
+				"Cor:: " + super.getCor() + "\n" + 
+				"Vel. Máx.: " + super.getVelMax() + "\n" + 
+				"Num. Passagueiros: " + super.getNumPass() + "\n" +
+				"Capac. Tanque: " + super.getCapTanque() + "\n" + 
+				"Km/L: " + super.getKmPorLitro()  + "\n" +
+				"Tipo de Quadro: " + getTipoDeQuadro() + "\n";
+		
+	}
 }
