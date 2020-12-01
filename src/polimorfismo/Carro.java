@@ -7,7 +7,8 @@ public class Carro extends Veiculo {
 	public Carro() {
 	}
 
-	public Carro(String marca, String modelo, String cor, int velMax, int numPass, double capTanque, double kmPorLitro,
+	public Carro(
+			String marca, String modelo, String cor, int velMax, int numPass, double capTanque, double kmPorLitro,
 			int capMala) {
 		super(marca, modelo, cor, velMax, numPass, capTanque, kmPorLitro);
 		this.capMala = capMala;
@@ -44,10 +45,11 @@ public class Carro extends Veiculo {
 
 	}
 	
+	@Override
 	public String toString() {
 		return "Marca: " + super.getMarca() + "\n" +
 				"Modelo: " + super.getModelo() + "\n" +
-				"Cor:: " + super.getCor() + "\n" + 
+				"Cor: " + super.getCor() + "\n" + 
 				"Vel. Máx.: " + super.getVelMax() + "\n" + 
 				"Num. Passagueiros: " + super.getNumPass() + "\n" +
 				"Capac. Tanque: " + super.getCapTanque() + "\n" + 

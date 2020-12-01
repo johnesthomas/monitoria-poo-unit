@@ -10,6 +10,7 @@ public class Programa {
 		// Utilizando os métodos sobreescritos da classe principal.		
 		System.out.println(moto.calcularAutonomia());
 		System.out.println(carro.calcularAutonomia());
+		System.out.println();
 		
 		// Imprimir os objetos.
 		System.out.println(moto);

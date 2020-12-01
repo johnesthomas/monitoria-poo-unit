@@ -44,6 +44,7 @@ public class Moto extends Veiculo {
 
 	}
 	
+	@Override
 	public String toString() {
 		return "Marca: " + super.getMarca() + "\n" +
 				"Modelo: " + super.getModelo() + "\n" +
